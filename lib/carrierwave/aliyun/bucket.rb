@@ -131,7 +131,7 @@ module CarrierWave
         return @oss_upload_client if defined?(@oss_upload_client)
 
         host = if @aliyun_internal
-                 "oss-#{@aliyun_area}-internal.aliyuncs.com"
+                 "vpc100-oss-#{@aliyun_area}.aliyuncs.com"
                else
                  "oss-#{@aliyun_area}.aliyuncs.com"
                end
